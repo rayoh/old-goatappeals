@@ -53,7 +53,7 @@ class Form extends Component {
     handleSubmit(e) {
         e.preventDefault();
         if (process.env.REACT_APP_ENABLE_HCAPTCHA === "true" && this.state.token === "") {
-            return alert("You must complete hCaptcha to submit this form")
+            return alert("Debes completar el hCaptcha para publicar esta apelación")
         }
         let user_info = {
             username: this.state.user.username,
@@ -119,13 +119,13 @@ class Form extends Component {
         if (this.state.notBanned) {
             return <Redirect to={{
                 pathname: '/404',
-                state: {errorCode: '403', errorMessage: "It looks like you're not banned... yet..."}
+                state: {errorCode: '403', errorMessage: "Al parecer no estás baneado... Aún..."}
             }}/>;
         }
         if (this.state.blocked) {
             return <Redirect to={{
                 pathname: '/404',
-                state: {errorCode: '403', errorMessage: "You have been blocked from submitting further ban appeals"}
+                state: {errorCode: '403', errorMessage: "Has sido bloqueado para publicar apelaciones"}
             }}/>;
         }
 
