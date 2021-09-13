@@ -44,9 +44,9 @@ function App() {
         <Router className="App">
             <Helmet>
                 <meta charSet="utf-8"/>
-                <title>{process.env.REACT_APP_SITE_TITLE ? process.env.REACT_APP_SITE_TITLE : `${title} Discord Ban Appeal Application`}</title>
+                <title>{process.env.REACT_APP_SITE_TITLE ? process.env.REACT_APP_SITE_TITLE : `${title} Aplicación de apelación`}</title>
                 <meta name="description"
-                      content={process.env.REACT_APP_SITE_DESCRIPTION ? process.env.REACT_APP_SITE_DESCRIPTION : `${title} Discord Ban Appeal Application`}/>
+                      content={process.env.REACT_APP_SITE_DESCRIPTION ? process.env.REACT_APP_SITE_DESCRIPTION : `${title} Aplicación de apelación`}/>
                 <link rel="icon" href={icon} type="image/x-icon"/>
             </Helmet>
             <Grid container
