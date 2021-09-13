@@ -1,10 +1,10 @@
 [
   {
     "question": "¿Por qué has sido baneado?",
-    "character_limit": 200
+    "character_limit": 100
   }, {
     "question": "¿Cuándo has sido baneado? (día-mes-año)",
-    "character_limit": 1024
+    "character_limit": 10
   }, {
     "question": "¿Por qué crees que deberíamos levantarte el ban?",
     "character_limit": 1024
